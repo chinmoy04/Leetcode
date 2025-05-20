@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>arrays-hashing</module>
+        <module>daily-problems</module>
     </modules>
 
     <properties>
@@ -17,5 +18,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.13</artifactId>
+            <version>4.0.0-preview1</version> <!-- Change this version to check different versions -->
+        </dependency>
+    </dependencies>
 
 </project>
